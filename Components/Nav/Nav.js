@@ -1,10 +1,13 @@
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 import React from 'react';
 
 const Nav = () => {
+    const router = useRouter();
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <div className="container">
-                <a className="navbar-brand" href="#">Navbar</a>
+                <Link className="navbar-brand" href="/">Navbar</Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
